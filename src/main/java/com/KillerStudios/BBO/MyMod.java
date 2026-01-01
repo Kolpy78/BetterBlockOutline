@@ -1,12 +1,11 @@
 package com.KillerStudios.BBO;
 
-import com.myname.mymodid.Tags;
-import cpw.mods.fml.common.registry.GameRegistry;
-import net.minecraft.client.Minecraft;
-import net.minecraftforge.client.event.DrawBlockHighlightEvent;
 import net.minecraftforge.common.MinecraftForge;
+
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+
+import com.myname.mymodid.Tags;
 
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.SidedProxy;
