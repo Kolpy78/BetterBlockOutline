@@ -47,5 +47,6 @@ public class MyMod {
     // register server commands in this event handler (Remove if not needed)
     public void serverStarting(FMLServerStartingEvent event) {
         proxy.serverStarting(event);
+        event.registerServerCommand(new Commands());
     }
 }

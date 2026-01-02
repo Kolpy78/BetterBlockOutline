@@ -16,6 +16,23 @@ import cpw.mods.fml.common.eventhandler.SubscribeEvent;
 
 public class BlockOutline {
 
+    public static float red = 1;
+    public static float blue = 1;
+    public static float green = 1;
+    public static float alpha = 1;
+    public static float lineThicc = 1;
+
+    public static void setRGBA(float NewRed, float NewBlue, float NewGreen, float NewAlpha) {
+        red = NewRed;
+        blue = NewBlue;
+        green = NewGreen;
+        alpha = NewAlpha;
+    }
+
+    public static void setLineThicc(float NewLineThicc) {
+        lineThicc = NewLineThicc;
+    }
+
     @SubscribeEvent
     public void DrawBlockHighlightEvent(DrawBlockHighlightEvent event) {
         event.setCanceled(true);
@@ -32,8 +49,8 @@ public class BlockOutline {
         GL11.glPushMatrix();
         GL11.glEnable(GL11.GL_BLEND);
         OpenGlHelper.glBlendFunc(770, 771, 1, 0);
-        GL11.glColor4f(1.0F, 1.0F, 1.0F, 1.0F);
-        GL11.glLineWidth(5.0F);
+        GL11.glColor4f(red, green, blue, alpha);
+        GL11.glLineWidth(lineThicc);
         GL11.glDisable(GL11.GL_TEXTURE_2D);
         GL11.glDepthMask(false);
         float f1 = 0.002F;
