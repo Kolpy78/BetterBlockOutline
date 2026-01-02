@@ -41,17 +41,6 @@ public class Commands extends CommandBase {
             if (args.length == 2) {
                 try {
                     checkRGBAT(args);
-                   } catch (NumberFormatException e) {
-                    throw new WrongUsageException("Please type a number from 0-255!");
-                }
-            } else {
-                throw new WrongUsageException("/BlockOutline color <Red|Green|Blue|Alpha>");
-            }
-        }
-        if (args[0].equalsIgnoreCase("line")) {
-            if (args.length == 2) {
-                try {
-                    checkRGBAT(args);
                 } catch (NumberFormatException e) {
                     throw new WrongUsageException("Please type a number from 0-15!");
                 }
