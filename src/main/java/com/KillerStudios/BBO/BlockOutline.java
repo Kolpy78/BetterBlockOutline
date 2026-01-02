@@ -16,11 +16,11 @@ import cpw.mods.fml.common.eventhandler.SubscribeEvent;
 
 public class BlockOutline {
 
-    public static float red = 1;
-    public static float blue = 1;
-    public static float green = 1;
-    public static float alpha = 1;
-    public static float lineThicc = 1;
+    public static float red = Config.Red;
+    public static float blue = Config.Blue;
+    public static float green = Config.Green;
+    public static float alpha = Config.Alpha;
+    public static float lineThicc = Config.Thick;
 
     public static void setRGBA(float NewRed, float NewBlue, float NewGreen, float NewAlpha) {
         red = NewRed;
