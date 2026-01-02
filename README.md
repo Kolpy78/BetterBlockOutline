@@ -5,4 +5,4 @@ commands:
 
 /BlockOutline color 
 
-/BlockOUtline line
+/BlockOutline line
